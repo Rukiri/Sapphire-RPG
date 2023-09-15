@@ -14,13 +14,24 @@ config/name="Sapphire RPG"
 run/main_scene="res://town.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 run/max_fps=120
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
+boot_splash/image="res://Splash.png"
+boot_splash/fullsize=false
+boot_splash/use_filter=false
 config/icon="res://icon.svg"
 
 [display]
 
 window/size/viewport_width=640
 window/size/viewport_height=360
-window/size/window_width_override=640
-window/size/window_height_override=360
+window/size/initial_screen=1
+window/stretch/mode="canvas_items"
 window/dpi/allow_hidpi=false
 window/per_pixel_transparency/allowed=true
+
+[rendering]
+
+anti_aliasing/screen_space_roughness_limiter/enabled=false
+anti_aliasing/screen_space_roughness_limiter/limit=0.18
+anti_aliasing/quality/use_taa=true
