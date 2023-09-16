@@ -1,3 +1,5 @@
 res://town.tscn
 res://player.tscn
 res://player.gd
+res://Sprite2D.gd
+res://spritepos.gd
