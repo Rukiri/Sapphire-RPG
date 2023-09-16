@@ -1,20 +1,24 @@
 [gd_scene load_steps=4 format=3 uid="uid://465q3y2q2ul7"]
 
-[ext_resource type="Texture2D" uid="uid://8e36qwqlrr17" path="res://icon.svg" id="1_ekoue"]
 [ext_resource type="Script" path="res://player.gd" id="1_enih8"]
+[ext_resource type="Texture2D" uid="uid://djwjjsxa5885k" path="res://test.png" id="2_82b7c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kq0qq"]
 size = Vector2(128, 128)
 
 [node name="Player" type="CharacterBody2D"]
-texture_filter = 2
+texture_filter = 1
+floor_snap_length = 0.0
 script = ExtResource("1_enih8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(64, 64)
-texture = ExtResource("1_ekoue")
+texture = ExtResource("2_82b7c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+texture_filter = 1
 position = Vector2(64, 64)
 shape = SubResource("RectangleShape2D_kq0qq")
+disabled = true
