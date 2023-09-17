@@ -2,9 +2,10 @@ extends CharacterBody2D
 
 var move_speed : int = 50
 var move_dir: get = _get_input_direction
+var float_position = Vector2.ZERO
 
 func _process(delta):
-	global_position = global_position.round()
+	position = _update_pos(float_position)
 
 func _physics_process(delta):
 	velocity = move_dir * move_speed
@@ -16,3 +17,9 @@ func _get_input_direction():
 
 	move_dir = round(Vector2(move_x, move_y).normalized())
 	return move_dir
+
+func _update_pos(pos):
+	pos.x = round(position.x)
+	pos.y = round(position.y)
+	pos = Vector2(pos.x, pos.y)
+	return pos
