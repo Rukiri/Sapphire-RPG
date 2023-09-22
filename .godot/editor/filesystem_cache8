@@ -1,7 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1695356535
+::res://::1695357107
 CharacterBody2D.gd::GDScript::-1::1695344806::0::1::::<>CharacterBody2D<>::
 icon.svg::CompressedTexture2D::9168697215394350891::1695340528::1695340533::1::::<><>::
-node_2d.tscn::PackedScene::6467051575314868644::1695355903::0::1::::<><>::uid://c8h0bkpwv3la8::::res://player.tscn<>uid://d3vndry426s2f::::res://icon.svg
-player.tscn::PackedScene::7105044111767079037::1695355903::0::1::::<><>::res://CharacterBody2D.gd<>uid://cgs4c3ljdrgcj::::res://test.png
+node_2d.tscn::PackedScene::6467051575314868644::1695356770::0::1::::<><>::uid://c8h0bkpwv3la8::::res://player.tscn<>uid://d3vndry426s2f::::res://icon.svg
+player.tscn::PackedScene::7105044111767079037::1695356770::0::1::::<><>::res://CharacterBody2D.gd<>uid://cgs4c3ljdrgcj::::res://test.png
+Splash.png::CompressedTexture2D::955791952157226885::1694772119::1694772129::1::::<><>::
 test.png::CompressedTexture2D::5232899081225765245::1694966461::1695340592::1::::<><>::
