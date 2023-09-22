@@ -1,24 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://465q3y2q2ul7"]
+[gd_scene load_steps=4 format=3 uid="uid://c8h0bkpwv3la8"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_enih8"]
-[ext_resource type="Texture2D" uid="uid://djwjjsxa5885k" path="res://test.png" id="2_82b7c"]
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_jwst1"]
+[ext_resource type="Texture2D" uid="uid://cgs4c3ljdrgcj" path="res://test.png" id="2_j5bf1"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kq0qq"]
-size = Vector2(128, 128)
+[sub_resource type="CircleShape2D" id="CircleShape2D_3832j"]
 
 [node name="Player" type="CharacterBody2D"]
-texture_filter = 1
-floor_snap_length = 0.0
-script = ExtResource("1_enih8")
+script = ExtResource("1_jwst1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(64, 64)
-texture = ExtResource("2_82b7c")
+position = Vector2(24, 37)
+texture = ExtResource("2_j5bf1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-texture_filter = 1
-position = Vector2(64, 64)
-shape = SubResource("RectangleShape2D_kq0qq")
-disabled = true
+position = Vector2(24, 48)
+shape = SubResource("CircleShape2D_3832j")
+
+[node name="Camera2D" type="Camera2D" parent="."]
